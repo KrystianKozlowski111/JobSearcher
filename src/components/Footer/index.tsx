@@ -8,7 +8,7 @@ const Footer: React.FC = ({ ...props }) => {
     <>
       <Wrapper>
         <Container>
-          <Text>© 2022 - Krystian Kozłowski IT</Text>
+          <Text>© 2022 - Krystian Kozłowski IT </Text>
           <SocialMedia>
             <a href="https://www.linkedin.com/in/krystian-koz%C5%82owski-5626b11b5/">
               <Img src={Linkedin} />

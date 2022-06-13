@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   gap: 20px;
   background-color: #4943da20;
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-bottom: 10px;
 `;
 export const Container = styled.div`
   display: flex;
@@ -24,12 +24,15 @@ export const Container = styled.div`
 `;
 export const Text = styled.div`
   display: flex;
+  align-items: center;
+  gap: 15px;
   font-style: normal;
   font-family: Nunito, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.2;
+  color: #4943da;
 `;
 
 export const SocialMedia = styled.div`
@@ -39,6 +42,6 @@ export const SocialMedia = styled.div`
 `;
 export const Img = styled.img`
   display: block;
-  max-width: 40px;
-  min-width: 40px;
+  max-width: 60px;
+  min-width: 60px;
 `;
