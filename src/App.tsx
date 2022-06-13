@@ -1,8 +1,7 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './views/HomePage';
 import Footer from './components/Footer';
-
+import ReccomendedJobs from './components/ReccomendedJobs';
+import SearchJobs from './components/SearchJobs';
 function App() {
   const client = new ApolloClient({
     uri: 'https://api.graphql.jobs/',
@@ -12,11 +11,8 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
         <header className="App-header">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-            </Routes>
-          </BrowserRouter>
+          <ReccomendedJobs />
+          <SearchJobs />
         </header>
         <Footer />
       </div>
